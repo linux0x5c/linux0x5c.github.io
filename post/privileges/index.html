@@ -8,14 +8,14 @@
     <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <meta name="description" content="杨林，Devops, 开源爱好者，Linux | 这里是 杨林 的博客，与你一起发现更大的世界。">
+    <meta name="description" content="acl some points">
     
-    <meta name="keyword"  content="杨林, yanglin, Yanglin, , 杨林的网络日志, 杨林的博客, Zempty0&#39;s Blog, 博客, 个人网站, 互联网, Microservice,Devops">
+    <meta name="keyword"  content="zempty0, yanglin, Yanglin, zemtpy0&#39;s blog, Zempty0&#39;s Blog, blog, Devops">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Acl-杨林的博客 | Zempty0&#39;s Blog</title>
+    <title>ACL privileges-Zempty0&#39;s Blog</title>
 
-    <link rel="canonical" href="/posts/acl/">
+    <link rel="canonical" href="/post/privileges/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -65,6 +65,10 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/linux-basic">Linux basic</a>
                     </li>
                     
 
@@ -129,13 +133,20 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                    </div>
-                    <h1>Acl</h1>
-                    <h2 class="subheading"></h2>
-		    <span class="meta">Posted by Zempty0&#39;s Blog
-                         on Monday, January 7, 2019
+                        <a class="tag" href="/tags/acl" title="acl">
+                            acl
+                        </a>
                         
-                        <span id="/posts/acl/" class="leancloud_visitors meta_data_item" data-flag-title="">
+                        <a class="tag" href="/tags/privileges" title="privileges">
+                            privileges
+                        </a>
+                        
+                    </div>
+                    <h1>ACL privileges</h1>
+                    <h2 class="subheading">linux acl</h2>
+		    <span class="meta">Posted by      &#34;zempty0&#34; on Monday, January 7, 2019
+                        
+                        <span id="/post/privileges/" class="leancloud_visitors meta_data_item" data-flag-title="">
     <span class="post-meta-item-icon">
       <span class="octicon octicon-eye"></span> 
     </span>
@@ -650,6 +661,7 @@ chmod u-s FILE...
 <pre><code>chmod g+s FILE|DIR...
 chmod g-s FILE|DIR...
 
+
 </code></pre>
 
 <p><img src="http://i.imgur.com/sA8Zq8k.png" alt="" /></p>
@@ -663,6 +675,7 @@ chmod g-s FILE|DIR...
 
 3.如果将A目录加上SBIT的权限项目时，则甲只能针对自己创建的文件或者目录进行删除、改名、移动等操作，而无法删除他人的文件。
 
+
 </code></pre>
 
 <p>权限设定：
@@ -670,6 +683,7 @@ chmod g-s FILE|DIR...
 
 <pre><code>chmod o+t DIR...
 chmod o-t DIR...
+
 
 </code></pre>
 
@@ -683,6 +697,7 @@ chmod o-t DIR...
 
 1为SBIT
 
+
 </code></pre>
 
 <p>使用命令chmod为文件或者目录增加三种特殊权限，分别对应chmod u+s 文件名或者目录,chmod g+s 文件名或者目录,chmod o+t 文件名或者目录。</p>
@@ -690,14 +705,15 @@ chmod o-t DIR...
 <p><strong>权限位映射：</strong></p>
 
 <pre><code>SUID: user,占据属主的执行权限位
-	s: 属主拥有x权限
-	S：属主没有x权限
+    s: 属主拥有x权限
+    S：属主没有x权限
 SGID: group,占据属组的执行权限位
-	s: group拥有x权限
-	S： group没有x权限
+    s: group拥有x权限
+    S： group没有x权限
 Sticky: other,占据other的执行权限位
-	t: other拥有x权限
-	T： other没有x权限
+    t: other拥有x权限
+    T： other没有x权限
+
 
 </code></pre>
 
@@ -722,6 +738,7 @@ Sticky: other,占据other的执行权限位
 111 7
 ~]#chmod 4777 /tmp/a.txt
 
+
 </code></pre>
 
 <p><strong>6、主机的具体权限规划：ACL的使用</strong></p>
@@ -735,6 +752,7 @@ tune2fs –o acl /dev/sdb1
 mount –o acl /dev/sdb1 /mnt
 ACL生效顺序：所有者，自定义用户，自定义组，其他人
 
+
 </code></pre>
 
 <p><strong>查看方法：</strong></p>
@@ -743,12 +761,14 @@ ACL生效顺序：所有者，自定义用户，自定义组，其他人
 dumpe2fs 1.41.12 (17-May-2010)
 Default mount options:    user_xattr acl
 
+
 </code></pre>
 
 <p>或者：</p>
 
 <pre><code>[root@localhost ~]# tune2fs -l /dev/sda1 | grep option
 Default mount options:    user_xattr acl
+
 
 </code></pre>
 
@@ -781,6 +801,7 @@ group::r--                      #effective:r--
 mask::r--
 other::r--
 
+
 </code></pre>
 
 <p>注：用户rwx的ACL设置信息。最终权限由mask控制，你所设置的权限必须在mask内，否则相对mask多出来的权限也是无效的。</p>
@@ -793,6 +814,7 @@ other::r--
 
 3.默认属性：还可以在该目录下在新建文件/目录时设置新数据的默认权限
 
+
 </code></pre>
 
 <p><strong>ACL设置技巧</strong>：getfacl、setfacl</p>
@@ -800,6 +822,7 @@ other::r--
 <pre><code>1.getfacl:取得某个文件或者目录的ACL设置项目；
 
 2.setfacl：设置某个目录或者文件的ACL规定；
+
 
 </code></pre>
 
@@ -836,6 +859,7 @@ other::r--
 
 -h, --help：显示帮助信息。
 
+
 </code></pre>
 
 <p><strong>getfacl命令用法</strong></p>
@@ -860,6 +884,7 @@ other::r--
 
 -h , --help：显示命令帮助信息。
 
+
 </code></pre>
 
 <p><strong>设置acl实例</strong>：</p>
@@ -875,12 +900,14 @@ other::r--
  setfacl -d -m u:young:rw directory ##这个目录下的所有文件和目录继承dirctory的acl权限
  getfacl file1 | setfacl --set-file=- file2 #设置file2与file1相同的acl
 
+
 </code></pre>
 
 <p>注：acl设置成功后文件属性的权限最后一位有一个“+”号</p>
 
 <pre><code>[root@localhost ~]# ll host 
 -rw-rw----+ 1 root root 59 Jan  1 20:48 host
+
 
 </code></pre>
 
@@ -906,6 +933,7 @@ drwxr-sr-x. 2 root root 4096 Aug  4 22:07 ./dir
 [root@localhost testdir]# ll  -d ./dir
 drwxrwsr-x+ 2 root root 4096 Aug  4 22:07 ./dir
 
+
 </code></pre>
 
 <p><strong>补充命令：</strong></p>
@@ -916,6 +944,7 @@ drwxrwsr-x+ 2 root root 4096 Aug  4 22:07 ./dir
 chattr +a 只能增加
 charttr -i  | charttr -a去除
 lsattr 显示特定属性
+
 
 </code></pre>
 
@@ -929,6 +958,7 @@ rm: cannot remove `host': Operation not permitted
 [root@localhost ~]# chattr -i host
 [root@localhost ~]# lsattr host 
 -------------e- host
+
 
 </code></pre>
 
@@ -1001,6 +1031,10 @@ rm: cannot remove `host': Operation not permitted
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
+                        
+                        
+                        
+                        
                         
                         
                     </div>
