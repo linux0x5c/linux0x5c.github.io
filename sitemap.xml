@@ -3,7 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://zempty0.xyz/posts/acl/</loc>
+    <lastmod>2019-01-07T15:25:12+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zempty0.xyz/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zempty0.xyz/posts/</loc>
+    <lastmod>2019-01-07T15:25:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -14,6 +25,7 @@
   
   <url>
     <loc>https://zempty0.xyz/</loc>
+    <lastmod>2019-01-07T15:25:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
