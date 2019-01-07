@@ -20,5 +20,25 @@
       <description>##Linux之用户管理与权限控制（下） 2.组管理命令 a、groupadd groupadd命令用来创建组。 groupadd - create a new group synopsis: groupadd [options] group options: -g : 指定GI</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://zempty0.xyz/search/placeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zempty0.xyz/search/placeholder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zempty0.xyz/top/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zempty0.xyz/top/about/</guid>
+      <description>Huabing Zhao is an ICT veteran with a passion for open source. He has a solid experience in the telecommunication and information technology industry for more than 17 years.
+Throughout his career, he has built a number of large-scale, cross-country OSS/BSS platforms/systems and operation tools, most of them are still running in productions.
+He also loves open source and has been contributing to a variety of open source projects, including Istio(Service Mesh https://istio.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -8,6 +8,14 @@
   </url>
   
   <url>
+    <loc>https://zempty0.xyz/search/placeholder/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zempty0.xyz/top/about/</loc>
+  </url>
+  
+  <url>
     <loc>https://zempty0.xyz/categories/</loc>
     <priority>0</priority>
   </url>
@@ -25,7 +33,17 @@
   </url>
   
   <url>
+    <loc>https://zempty0.xyz/search/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://zempty0.xyz/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zempty0.xyz/top/</loc>
     <priority>0</priority>
   </url>
   
