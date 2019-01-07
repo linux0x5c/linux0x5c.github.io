@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linux basic on Zempty0&#39;s Blog</title>
+    <title>Linux basic on Zempty0&#39;s Blog</title>
     <link>https://zempty0.xyz/categories/linux-basic/</link>
-    <description>Recent content in linux basic on Zempty0&#39;s Blog</description>
+    <description>Recent content in Linux basic on Zempty0&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zempty0.xyz/categories/linux-basic/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>I&#39;m a bash scripts</title>
-      <link>https://zempty0.xyz/post/bash_scripts/</link>
-      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
+      <title>ACL privileges</title>
+      <link>https://zempty0.xyz/post/privileges/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zempty0.xyz/post/bash_scripts/</guid>
-      <description>#!/bin/sh : &amp;lt;&amp;lt;-&#39;EOF&#39; Copyright 2017 Xingwang Liao &amp;lt;kuoruan@gmail.com&amp;gt; Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</description>
+      <guid>https://zempty0.xyz/post/privileges/</guid>
+      <description>##Linux之用户管理与权限控制（下） 2.组管理命令 a、groupadd groupadd命令用来创建组。 groupadd - create a new group synopsis: groupadd [options] group options: -g : 指定GI</description>
     </item>
     
   </channel>
