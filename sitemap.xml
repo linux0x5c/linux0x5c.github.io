@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://zempty0.xyz/post/bash_scripts/</loc>
+    <lastmod>2018-01-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zempty0.xyz/search/placeholder/</loc>
   </url>
   
@@ -60,8 +65,26 @@
   </url>
   
   <url>
+    <loc>https://zempty0.xyz/tags/bash/</loc>
+    <lastmod>2018-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zempty0.xyz/categories/linux-basic/</loc>
+    <lastmod>2018-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://zempty0.xyz/tags/privileges/</loc>
     <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zempty0.xyz/tags/scripts/</loc>
+    <lastmod>2018-01-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
