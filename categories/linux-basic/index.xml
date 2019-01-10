@@ -17,7 +17,7 @@
       <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://zempty0.xyz/post/bash_scripts/</guid>
-      <description>#!/bin/bash # processing options and parameters with getopts while getopts :ab:cd opt do case &amp;quot;$opt&amp;quot; in a) echo &amp;quot;Found the -a option&amp;quot;;; b) echo &amp;quot;Found the -b option,with value $OPTARG&amp;quot;;; c) echo &amp;quot;Found the -c option&amp;quot;;; d) echo &amp;quot;Found the -d option&amp;quot;;; *) echo &amp;quot;Unknown option: $opt&amp;quot;;; esac done shift $[ $OPTIND - 1 ] count=1 for param in &amp;quot;$@&amp;quot; do echo &amp;quot;Parameter $count: $param&amp;quot; count=$[ $count + 1 ] done  </description>
+      <description>#!/bin/sh : &amp;lt;&amp;lt;-&#39;EOF&#39; Copyright 2017 Xingwang Liao &amp;lt;kuoruan@gmail.com&amp;gt; Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</description>
     </item>
     
   </channel>
