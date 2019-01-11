@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Zempty0&#39;s Blog</title>
-    <link>https://zempty0.xyz/post/</link>
-    <description>Recent content in Posts on Zempty0&#39;s Blog</description>
+    <title>linux on Zempty0&#39;s Blog</title>
+    <link>https://zempty0.xyz/tags/linux/</link>
+    <description>Recent content in linux on Zempty0&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 11 Jan 2018 17:14:00 +0000</lastBuildDate>
     
-	<atom:link href="https://zempty0.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zempty0.xyz/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

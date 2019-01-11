@@ -6,7 +6,7 @@
     <description>Recent content on Zempty0&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jan 2018 17:14:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zempty0.xyz/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>I&#39;m a bash scripts</title>
       <link>https://zempty0.xyz/post/bash_scripts/</link>
-      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 11 Jan 2018 17:14:00 +0000</pubDate>
       
       <guid>https://zempty0.xyz/post/bash_scripts/</guid>
       <description>#!/bin/bash # extracting command line options and values with getopt # getopt command is not goot at dealing with space,we can use getopts set -- `getopt -q ab:c &amp;quot;$@&amp;quot;` while [ -n &amp;quot;$1&amp;quot; ] do case &amp;quot;$1&amp;quot; in -a) echo &amp;quot;Found the -a option&amp;quot;;; -b) param=&amp;quot;$2&amp;quot; echo &amp;quot;Found the -b option,with parameter value $param&amp;quot; shift;; -c) echo &amp;quot;Found the -c option&amp;quot;;; --) shift break;; *) echo &amp;quot;$1 is not an option&amp;quot;;; esac shift done count=1 for param in &amp;quot;$@&amp;quot; do echo &amp;quot;Parameter #$count: $param&amp;quot; count=$[ $count+1 ] done  </description>
